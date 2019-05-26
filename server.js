@@ -19,8 +19,8 @@ require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 // For serving of static CSS
-app.use(express.static(__dirname + "./app/public/css"));
-app.use(express.static(__dirname + "./app/public/images"));
+app.use(express.static(__dirname + "../app/public/css/style.css"));
+app.use(express.static(__dirname + "../app/public/images"));
 
 
 // LISTENER
