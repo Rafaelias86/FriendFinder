@@ -19,7 +19,7 @@ require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 // For serving of static CSS
-app.use(express.static(__dirname + "/app/public"));
+app.use(express.static(__dirname + "./app/public/CSS/stlyle.css"));
 
 
 
