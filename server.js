@@ -18,6 +18,10 @@ app.use(express.json());
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
+// For serving of static CSS
+app.use(express.static(__dirname + "/app/public/css"));
+app.use(express.static(__dirname + "/app/public/images"));
+
 
 // LISTENER
 app.listen(PORT, function () {
