@@ -1,12 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Survey | Rafael U</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
+
 <body>
-    <h1>Survey</h1>
+<nav class="navbar navbar-expand-lg navbar-dark mb-3" id = "navbarp">
+        <span class="navbar-brand mb-1 h1 bg-secondaary p-2" id = "navbarc"> <h2>Soul Mate Finder Survey</h2> </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right  ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/"><h4> Home </i></a></h4>
+            </li>
+            </ul>
+    </div>
+</nav>
+
+    <div class="container">
+        <form action="">
+            
+            <hr>
+            <h3>
+                 About You
+            </h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required="">
+            <br>
+            
+
+            <hr>
+            <h4>Question 1</h4>
+            <h5>I don't pay attention to what I'm doing because I'm daydreaming, worrying, or otherwise distracted.</h5>
+            <select class="chosen-select" id="q1" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 2</h4>
+            <h5>On a scale of 1 to 5 (5 being "extremely quickly" and 1 being "extremely slowly"), how fast are you able to solve coding bugs?</h5>
+            <select class="chosen-select" id="q2" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Extremely Slowly)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Extremely Quickly)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 3</h4>
+            <h5>The programming language JavaScript is easy to use.</h5>
+            <select class="chosen-select" id="q3" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 4</h4>
+            <h5>GOT is great!</h5>
+            <select class="chosen-select" id="q4" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 5</h4>
+            <h5>When you're doing your HW do you research in google?</h5>
+            <select class="chosen-select" id="q5" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 6</h4>
+            <h5>Is the TA Russell the best TA of the bootcamp? </h5>
+            <select class="chosen-select" id="q6" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 7</h4>
+            <h5>I would recommend this bootcamp to my friends.</h5>
+            <select class="chosen-select" id="q7" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 8</h4>
+            <h5>A good beer can help to solve your problems.</h5>
+            <select class="chosen-select" id="q8" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 9</h4>
+            <h5>Was Cersei Lannister a good queen?</h5>
+            <select class="chosen-select" id="q9" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4>Question 10</h4>
+            <h5>I rather a cup of coffee than a green smoothie in the morning.</h5>
+            <select class="chosen-select" id="q10" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <hr>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-warning btn-lg " id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
+        </form>
+        <hr>
+
+        <footer>
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
+                        Repo</a></p>
+            </div>
+        </footer>
+    </div>
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" style="max-width:500px;max-height:500px;" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+                        alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/kat3ng/friend_finder">GitHub
+                        Repo</a></p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+    
+      // Chosen CSS
+    var config = {
+    ".chosen-select": {},
+    ".chosen-select-deselect": {
+        allow_single_deselect: true
+    },
+    ".chosen-select-no-single": {
+        disable_search_threshold: 10
+    },
+    ".chosen-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+    },
+    ".chosen-select-width": {
+        width: "95%"
+    }
+};
+
+// Capture the form inputs
+$("#submit").on("click", (event) => {
+    event.preventDefault();
+
+    // Create an object for the user"s data
+    var userData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+        ]
+    };
+
+    // AJAX post the data to the friends API.
+    $.post("/api/friends", userData, (data) => {
+
+        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
+
+        // Show the modal with the best match
+        $("#results-modal").modal("toggle");
+
+    });
+
+});
+    </script>
 </body>
+
 </html>

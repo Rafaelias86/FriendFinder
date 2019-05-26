@@ -1,25 +1,25 @@
-// Dependencies
-// =============================================================
+// DEPENDENCIES
 var express = require("express");
 var path = require("path");
 
-// Sets up the Express App
-// =============================================================
-var app = express();
-var PORT = process.env.PORT ||8080
 
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
+// SETS UP EXPRESS
+var app = express();
+var PORT = process.env.PORT || 8080;
+
+// EXPRESS DATA PARSING CAPABILITIES
+app.use(express.static('app/public'));
+app.use(express.urlencoded({
+    extended: true
+}));
 app.use(express.json());
 
-require('./app/routing/htmlRoutes.js')(app);
-// Displays all characters
-// app.get("/api/characters", function(req, res) {
-//     return res.json(characters);
-//   });
+// ROUTER
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
-// Starts the server to begin listening
-// =============================================================
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  })
+
+// LISTENER
+app.listen(PORT, function () {
+    console.log("App listening on PORT: " + PORT);
+});
