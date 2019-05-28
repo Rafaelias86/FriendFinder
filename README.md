@@ -16,7 +16,7 @@ Friend Finder is an app basically a dating app but for friends using Node and Ex
 
 ## App Deployed in Heroku
 ----
-* [Link to Heroku](https://radiant-dawn-56306.herokuapp.com/survey)
+* [Link to Heroku](https://radiant-dawn-56306.herokuapp.com/)
 
 
 ## Screen Shots
