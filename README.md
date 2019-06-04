@@ -14,10 +14,10 @@ Friend Finder is an app basically a dating app but for friends using Node and Ex
 - Express NPM Package - https://www.npmjs.com/package/express
 - Path NPM Package - https://www.npmjs.com/package/path
 
-## Links
+## App Deployed in Heroku
 ----
-* [Link to Heroku]
-* [Link to my repository]
+* [Link to Heroku](https://radiant-dawn-56306.herokuapp.com/)
+
 
 ## Screen Shots
 -----
