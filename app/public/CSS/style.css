@@ -1,6 +1,17 @@
 body{
     background: rgb(226, 223, 223);
 }
+.mainbody{
+    background: url("../images/bg.jpg");
+    
+      /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .jumbotron {
     margin-top: 10px;
     margin-bottom: 100px;
@@ -22,3 +33,6 @@ a{
     width: 100%;
     max-width: 300px;
 }
+.view {
+    height: 100%;
+  }
