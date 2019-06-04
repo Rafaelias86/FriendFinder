@@ -18,3 +18,7 @@ a{
 #navbarp{
     background:#3a54a5; 
 }
+#match-img{
+    width: 100%;
+    max-width: 300px;
+}
